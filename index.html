@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en" class="scroll-smooth" data-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Carl Joshua De Jesus | Junior Software Engineer</title>
+    <meta
+      name="description"
+      content="Carl Joshua De Jesus — Junior Software Engineer. Building web applications with React, TypeScript, APIs, and quality-minded delivery."
+    />
+
+    <!-- Open Graph (LinkedIn, Facebook, etc.) -->
+    <!-- After deploy: replace SITE_URL below with your live domain in both og:url and og:image -->
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Carl Joshua De Jesus" />
+    <meta
+      property="og:title"
+      content="Carl Joshua De Jesus | Junior Software Engineer"
+    />
+    <meta
+      property="og:description"
+      content="Junior software engineer focused on React, TypeScript, APIs, and quality-minded delivery. View selected work and experience."
+    />
+    <meta property="og:url" content="https://SITE_URL/" />
+    <meta property="og:image" content="https://SITE_URL/og-image.png" />
+    <meta property="og:image:type" content="image/png" />
+    <meta property="og:image:alt" content="Portrait of Carl Joshua De Jesus" />
+
+    <!-- Twitter / X -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="Carl Joshua De Jesus | Junior Software Engineer"
+    />
+    <meta
+      name="twitter:description"
+      content="Junior software engineer focused on React, TypeScript, APIs, and quality-minded delivery."
+    />
+    <meta name="twitter:image" content="https://SITE_URL/og-image.png" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700&family=Sora:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <script>
+      (() => {
+        try {
+          const stored = localStorage.getItem('portfolio-theme')
+          const theme =
+            stored === 'light' || stored === 'dark'
+              ? stored
+              : window.matchMedia('(prefers-color-scheme: light)').matches
+                ? 'light'
+                : 'dark'
+          document.documentElement.setAttribute('data-theme', theme)
+        } catch {
+          document.documentElement.setAttribute('data-theme', 'dark')
+        }
+      })()
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
