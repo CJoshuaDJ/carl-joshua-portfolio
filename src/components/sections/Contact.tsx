@@ -26,7 +26,7 @@ export function Contact() {
     <Section id="contact" ariaLabelledBy="contact-heading">
       <SectionHeading
         id="contact-heading"
-        index="06"
+        index="07"
         eyebrow="Contact"
         title="Let’s build something worth shipping"
         description="Open to junior software engineering roles where I can build, ship, and grow with a product team."

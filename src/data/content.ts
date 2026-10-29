@@ -26,8 +26,32 @@ export const navLinks = [
   { label: 'Experience', href: '#experience' },
   { label: 'Projects', href: '#projects' },
   { label: 'Certifications', href: '#certifications' },
+  { label: 'This site', href: '#this-site' },
   { label: 'Contact', href: '#contact' },
 ] as const
+
+export const siteNotes = {
+  purpose: [
+    'This portfolio is a living product sample — not just a brochure. It presents my experience, projects, and credentials the way I would ship a real frontend: clear structure, responsive layout, and careful interaction details.',
+    'I built it to help hiring teams quickly see how I think about UI, engineering habits, and delivery. Every project linked here is real work with public source and a live demo.',
+  ],
+  stack: [
+    { name: 'React', detail: 'Component UI and client state' },
+    { name: 'TypeScript', detail: 'Typed application code' },
+    { name: 'Vite', detail: 'Fast local dev and production builds' },
+    { name: 'Tailwind CSS', detail: 'Utility-first styling and theming' },
+    { name: 'Framer Motion', detail: 'Section and interaction motion' },
+    { name: 'Lucide React', detail: 'Icon system' },
+    { name: 'Credly embeds', detail: 'Verified certification badges' },
+    { name: 'Vercel', detail: 'Hosting and production deploys' },
+  ],
+  highlights: [
+    'Light and dark themes with a portrait that changes outfit',
+    'Accessible navigation patterns, skip link, and keyboard-friendly controls',
+    'Selected work includes JobTrack and BugBoard with live demos',
+  ],
+  repo: 'https://github.com/CJoshuaDJ/carl-joshua-portfolio',
+} as const
 
 export const skillCategories = [
   {
